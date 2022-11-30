@@ -17,6 +17,7 @@
 #include "tank.h"
 #include "implot/implot.h"
 #include "myimplot.h"
+#include "GraphProcess.h"
 
 /*Tank	g_tank;	*/				// íÔ
 Monster g_monster;
@@ -234,6 +235,8 @@ void GameRender(uint64_t dt) {
 
 	//implot•`‰æ
 	//implotDraw(Demo_LinePlots);
+
+	GraphUpdata();
 
 	// •`‰æŒãˆ—
 	DX11AfterRender();

@@ -1,20 +1,13 @@
 #pragma once
 #include "implot/implot.h"
-#include "myimplot.h"]
-
+#include "myimplot.h"
 #include "dx11mathutil.h"
 
-class Process
+void GraphInit();
+int GraphUpdata();
+void GraphDrow(XMFLOAT4X4 &mtx);
+
+void SetMtx(XMFLOAT4X4 p)
 {
-public:
-	void GraphInit();
-	void GraphUpdata();
-	void GraphDrow();
-
-	XMFLOAT4X4 GraphEditor(XMFLOAT4X4 mtx);
-	
-private:
-
-public:
-
-};
+	XMFLOAT4X4 Mtx = p;
+}

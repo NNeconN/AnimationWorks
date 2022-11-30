@@ -45,8 +45,8 @@
 // [SECTION] Obsolete API
 
 #pragma once
-#include "\Users\wajir\Downloads\５９－戦車（平面上の移動）\ソース\38-01-モデル表示 戦車表示 （ループを使わない）\implot\implot.h"
-#include "\Users\wajir\Downloads\５９－戦車（平面上の移動）\ソース\38-01-モデル表示 戦車表示 （ループを使わない）\imgui\imgui.h"
+#include "\Users\yuma1\OneDrive\デスクトップ\woks\implot\implot.h"
+#include "\Users\yuma1\OneDrive\デスクトップ\woks\imgui\imgui.h"
 
 //-----------------------------------------------------------------------------
 // [SECTION] Macros and Defines

@@ -134,6 +134,8 @@
     <ClCompile Include="GraphProcess.cpp" />
     <ClCompile Include="hommingmissile.cpp" />
     <ClCompile Include="ImGuizmo.cpp" />
+    <ClCompile Include="imgui\addition\imgui_impl_dx11.cpp" />
+    <ClCompile Include="imgui\addition\imgui_impl_win32.cpp" />
     <ClCompile Include="imgui\imgui.cpp" />
     <ClCompile Include="imgui\imgui_demo.cpp" />
     <ClCompile Include="imgui\imgui_draw.cpp" />
@@ -176,6 +178,8 @@
     <ClInclude Include="GraphProcess.h" />
     <ClInclude Include="hommingmissile.h" />
     <ClInclude Include="ImGuizmo.h" />
+    <ClInclude Include="imgui\addition\imgui_impl_dx11.h" />
+    <ClInclude Include="imgui\addition\imgui_impl_win32.h" />
     <ClInclude Include="imgui\imconfig.h" />
     <ClInclude Include="imgui\imgui.h" />
     <ClInclude Include="imgui\imgui_impl_dx11.h" />

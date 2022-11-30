@@ -210,6 +210,12 @@
     <ClCompile Include="ImGuizmo.cpp">
       <Filter>リソース ファイル</Filter>
     </ClCompile>
+    <ClCompile Include="imgui\addition\imgui_impl_win32.cpp">
+      <Filter>リソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="imgui\addition\imgui_impl_dx11.cpp">
+      <Filter>リソース ファイル</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="gameobject.h">
@@ -363,6 +369,12 @@
       <Filter>リソース ファイル</Filter>
     </ClInclude>
     <ClInclude Include="ImGuizmo.h">
+      <Filter>リソース ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\addition\imgui_impl_dx11.h">
+      <Filter>リソース ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="imgui\addition\imgui_impl_win32.h">
       <Filter>リソース ファイル</Filter>
     </ClInclude>
   </ItemGroup>
