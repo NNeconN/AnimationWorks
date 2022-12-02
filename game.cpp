@@ -18,7 +18,7 @@
 #include "implot/implot.h"
 #include "myimplot.h"
 
-/*Tank	g_tank;	*/				// 戦車
+#include "player.h"	//相互インクルードを防ぐ為にcppにかく。ほんとはhに書くのがいい
 Monster g_monster;
 
 template <typename T>
@@ -191,7 +191,7 @@ void imguidebug() {
 	ImGui::End();
 
 	ImGui::Begin(u8"操作説明");
-
+	ImGui::DragFloat("HP",&g_monster.hp);
 	str = u8"自機：ADキー：向きを変える";
 	ImGui::Text(str.c_str());
 
@@ -207,6 +207,8 @@ void imguidebug() {
 
 	ImGui::End();
 }
+
+//class gurp
 
 void GameRender(uint64_t dt) {
 

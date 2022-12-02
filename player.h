@@ -60,6 +60,7 @@ public:
 	void Draw();
 	void Update();
 	void Finalize();
+	float hp = 100;
 
 private:
 	void UpdateLocalpose(); // ローカルポーズを更新する
