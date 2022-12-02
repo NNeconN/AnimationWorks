@@ -204,17 +204,11 @@
     <ClCompile Include="myimplot.cpp">
       <Filter>ソース ファイル\system\implot</Filter>
     </ClCompile>
-    <ClCompile Include="GraphProcess.cpp">
-      <Filter>リソース ファイル</Filter>
+    <ClCompile Include="imgui\ImGuizmo.cpp">
+      <Filter>ソース ファイル\system\imgui</Filter>
     </ClCompile>
-    <ClCompile Include="ImGuizmo.cpp">
-      <Filter>リソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="imgui\addition\imgui_impl_win32.cpp">
-      <Filter>リソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="imgui\addition\imgui_impl_dx11.cpp">
-      <Filter>リソース ファイル</Filter>
+    <ClCompile Include="imgui\GraphProcess.cpp">
+      <Filter>ソース ファイル\system\imgui</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -365,17 +359,11 @@
     <ClInclude Include="myimplot.h">
       <Filter>ソース ファイル\system\implot</Filter>
     </ClInclude>
-    <ClInclude Include="GraphProcess.h">
-      <Filter>リソース ファイル</Filter>
+    <ClInclude Include="imgui\GraphProcess.h">
+      <Filter>ソース ファイル\system\imgui</Filter>
     </ClInclude>
-    <ClInclude Include="ImGuizmo.h">
-      <Filter>リソース ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="imgui\addition\imgui_impl_dx11.h">
-      <Filter>リソース ファイル</Filter>
-    </ClInclude>
-    <ClInclude Include="imgui\addition\imgui_impl_win32.h">
-      <Filter>リソース ファイル</Filter>
+    <ClInclude Include="imgui\ImGuizmo.h">
+      <Filter>ソース ファイル\system\imgui</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
