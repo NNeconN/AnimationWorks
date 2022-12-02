@@ -45,8 +45,8 @@
 // [SECTION] Obsolete API
 
 #pragma once
-#include "\Users\yuma1\OneDrive\デスクトップ\woks\implot\implot.h"
-#include "\Users\yuma1\OneDrive\デスクトップ\woks\imgui\imgui.h"
+#include "\Users\wajir\Desktop\woks\implot\implot.h"
+#include "\Users\wajir\Desktop\woks\imgui\imgui.h"
 
 //-----------------------------------------------------------------------------
 // [SECTION] Macros and Defines

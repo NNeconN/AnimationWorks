@@ -56,6 +56,12 @@ public:
 
 	}
 
+	void SetPos(DirectX::XMFLOAT3 input)
+	{
+
+		m_pos = input;
+	}
+
 	bool Init();
 	void Draw();
 	void Update();

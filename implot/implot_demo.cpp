@@ -27,7 +27,7 @@
 #define IMPLOT_DISABLE_OBSOLETE_FUNCTIONS
 #endif
 
-#include "\Users\yuma1\Downloads\５９－戦車（平面上の移動）\ソース\38-01-モデル表示 戦車表示 （ループを使わない）\implot\implot.h"
+#include "\Users\wajir\Desktop\woks\implot\implot.h"
 #include <math.h>
 #include <stdio.h>
 #include <stdlib.h>
