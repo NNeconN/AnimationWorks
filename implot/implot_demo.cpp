@@ -27,7 +27,7 @@
 #define IMPLOT_DISABLE_OBSOLETE_FUNCTIONS
 #endif
 
-#include "\Users\wajir\Desktop\woks\implot\implot.h"
+#include "\Users\yuma1\OneDrive\デスクトップ\woks\implot\implot.h"
 #include <math.h>
 #include <stdio.h>
 #include <stdlib.h>

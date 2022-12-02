@@ -36,8 +36,8 @@
 #endif
 
 #include <time.h>
-#include "\Users\wajir\Desktop\woks\implot\implot_internal.h"
-#include "\Users\wajir\Desktop\woks\imgui\imgui_internal.h"
+#include "\Users\yuma1\OneDrive\デスクトップ\woks\implot\implot_internal.h"
+#include "\Users\yuma1\OneDrive\デスクトップ\woks\imgui\imgui_internal.h"
 
 #ifndef IMPLOT_VERSION
 #error Must include implot.h before implot_internal.h
