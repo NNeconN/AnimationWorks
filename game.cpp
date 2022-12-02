@@ -17,6 +17,7 @@
 #include "tank.h"
 #include "implot/implot.h"
 #include "myimplot.h"
+#include "imgui\GraphProcess.h"
 
 #include "player.h"	//相互インクルードを防ぐ為にcppにかく。ほんとはhに書くのがいい
 Monster g_monster;
@@ -236,6 +237,8 @@ void GameRender(uint64_t dt) {
 
 	//implot描画
 	//implotDraw(Demo_LinePlots);
+
+	/*GraphUpdata();*/
 
 	// 描画後処理
 	DX11AfterRender();

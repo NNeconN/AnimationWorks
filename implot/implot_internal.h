@@ -36,8 +36,8 @@
 #endif
 
 #include <time.h>
-#include "\Users\wajir\Downloads\５９－戦車（平面上の移動）\ソース\38-01-モデル表示 戦車表示 （ループを使わない）\implot\implot_internal.h"
-#include "\Users\wajir\Downloads\５９－戦車（平面上の移動）\ソース\38-01-モデル表示 戦車表示 （ループを使わない）\imgui\imgui_internal.h"
+#include "\Users\yuma1\OneDrive\デスクトップ\woks\implot\implot_internal.h"
+#include "\Users\yuma1\OneDrive\デスクトップ\woks\imgui\imgui_internal.h"
 
 #ifndef IMPLOT_VERSION
 #error Must include implot.h before implot_internal.h
