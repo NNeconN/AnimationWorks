@@ -66,7 +66,6 @@ public:
 	void Draw();
 	void Update();
 	void Finalize();
-	float hp = 100;
 
 private:
 	void UpdateLocalpose(); // ローカルポーズを更新する
@@ -80,4 +79,7 @@ private:
 
 	float m_speed = 0.0f; // スピード
 	DirectX::XMFLOAT3 m_angle; // 回転角
+
+public:
+	float hp = 100;
 };

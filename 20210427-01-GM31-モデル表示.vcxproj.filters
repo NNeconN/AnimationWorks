@@ -207,8 +207,8 @@
     <ClCompile Include="imgui\ImGuizmo.cpp">
       <Filter>ソース ファイル\system\imgui</Filter>
     </ClCompile>
-    <ClCompile Include="imgui\GraphProcess.cpp">
-      <Filter>ソース ファイル\system\imgui</Filter>
+    <ClCompile Include="AnimationData.cpp">
+      <Filter>ソース ファイル\game</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -359,11 +359,11 @@
     <ClInclude Include="myimplot.h">
       <Filter>ソース ファイル\system\implot</Filter>
     </ClInclude>
-    <ClInclude Include="imgui\GraphProcess.h">
-      <Filter>ソース ファイル\system\imgui</Filter>
-    </ClInclude>
     <ClInclude Include="imgui\ImGuizmo.h">
       <Filter>ソース ファイル\system\imgui</Filter>
+    </ClInclude>
+    <ClInclude Include="AnimationData.h">
+      <Filter>ソース ファイル\game</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
