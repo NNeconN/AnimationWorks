@@ -148,6 +148,7 @@
     <ClCompile Include="ModelMgr.cpp" />
     <ClCompile Include="myimgui.cpp" />
     <ClCompile Include="myimplot.cpp" />
+    <ClCompile Include="nikoniko.cpp" />
     <ClCompile Include="Sphere.cpp" />
     <ClCompile Include="CWindow.cpp" />
     <ClCompile Include="CWindowCallback.cpp" />
@@ -190,6 +191,7 @@
     <ClInclude Include="ModelMgr.h" />
     <ClInclude Include="myimgui.h" />
     <ClInclude Include="myimplot.h" />
+    <ClInclude Include="nikoniko.h" />
     <ClInclude Include="Sphere.h" />
     <ClInclude Include="drawaxis.h" />
     <ClInclude Include="gameobject.h" />

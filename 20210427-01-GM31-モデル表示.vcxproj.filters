@@ -76,6 +76,9 @@
     <Filter Include="ソース ファイル\system\implot">
       <UniqueIdentifier>{7aa76194-20aa-4ab5-a51e-5a6db7b719cd}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\game\gemaobject\niko">
+      <UniqueIdentifier>{7f0bac9e-0187-487f-945b-522f7981634c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Application.cpp">
@@ -209,6 +212,9 @@
     </ClCompile>
     <ClCompile Include="AnimationData.cpp">
       <Filter>ソース ファイル\game</Filter>
+    </ClCompile>
+    <ClCompile Include="nikoniko.cpp">
+      <Filter>ソース ファイル\game\gemaobject\niko</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -364,6 +370,9 @@
     </ClInclude>
     <ClInclude Include="AnimationData.h">
       <Filter>ソース ファイル\game</Filter>
+    </ClInclude>
+    <ClInclude Include="nikoniko.h">
+      <Filter>ソース ファイル\game\gemaobject\niko</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

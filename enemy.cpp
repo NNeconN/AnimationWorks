@@ -6,9 +6,6 @@ bool Enemy::Init() {
 
 	bool sts = true;
 
-	// s—ñ‰Šú‰»
-	DX11MtxIdentity(m_mtx);
-
 	m_actionKeepTime = 10;
 
 	m_speed = 1.0f;

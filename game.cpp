@@ -7,7 +7,6 @@
 #include "dx11mathutil.h"
 #include "Application.h"
 #include "CDirectInput.h"
-#include "player.h"
 #include "skydome.h"
 #include "updatespherecamera.h"
 #include "BoundingSphere.h"
@@ -20,9 +19,11 @@
 #include "myimplot.h"
 #include "player.h"	//相互インクルードを防ぐ為にcppにかく。ほんとはhに書くのがいい
 #include "AnimationData.h"
+#include "nikoniko.h"
 
 Monster g_monster;
 AnimationData g_anime;
+Nikoniko g_nikoniko;
 
 template <typename T>
 inline T RandomRange(T min, T max) {
@@ -118,6 +119,7 @@ void GameInit() {
 	//g_tank.Init();
 
 	g_monster.Init();
+	//g_nikoniko.Init();
 
 	// IMGUI初期化
 	imguiInit();
@@ -132,6 +134,7 @@ void GameUpdate(uint64_t dt) {
 	// プレイヤ更新
 	/*g_tank.Update();*/
 	g_monster.Update();
+	/*g_nikoniko.Update();*/
 }
 
 //void Demo_DragPoints() {
@@ -498,15 +501,22 @@ void imguidebug() {
 	//座標のDragGui
 	ImGui::Begin(u8"座標");
 	static float slider1 = 0.0f;
-	slider1 = g_monster.GetPos().x;
+	static float slider2 = 0.0f;
+	slider1 = g_anime.g_monster.GetPos().x;
+	slider2 = g_anime.g_monster.GetPos().y;
 	static char text1[8] = "";
 
+	//if (CDirectInput::GetInstance().)
+	//{
+
+	//}
 	ImGui::Text("fps: %.2f", &g_monster.hp);
 	ImGui::SliderFloat("slider 1", &slider1, -100, 100);
 
 	DirectX::XMFLOAT3 outputpos = { 0,0,0 };
 
 	outputpos.x = slider1;
+	outputpos.y = slider2;
 
 	g_monster.SetPos(outputpos);
 	ImGui::InputText("textbox 1", text1, sizeof(text1));
@@ -544,6 +554,7 @@ void GameRender(uint64_t dt) {
 	// 戦車描画
 	/*g_tank.Draw();*/
 	g_monster.Draw();
+	/*g_nikoniko.Draw();*/
 
 	// imgui 描画
 	imguiDraw(imguidebug);

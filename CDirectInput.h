@@ -18,9 +18,10 @@ private:
 	int						m_width;			// マウスのＸ座標最大
 	int						m_height;			// マウスのＹ座標最大
 	HWND					m_hwnd;
+public:
+
 	CDirectInput() :m_dinput(nullptr), m_dikeyboard(nullptr), m_dimouse(nullptr) {
 	}
-public:
 
 	CDirectInput(const CDirectInput&) = delete;
 	CDirectInput& operator=(const CDirectInput&) = delete;
