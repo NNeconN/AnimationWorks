@@ -129,7 +129,7 @@ enum ImAxis_ {
 
 // Options for plots (see BeginPlot).
 enum ImPlotFlags_ {
-    ImPlotFlags_None          = 0,       // default
+    ImPlotFlags_None = 0,       // default
     ImPlotFlags_NoTitle       = 1 << 0,  // the plot title will not be displayed (titles are also hidden if preceeded by double hashes, e.g. "##MyPlot")
     ImPlotFlags_NoLegend      = 1 << 1,  // the legend will not be displayed
     ImPlotFlags_NoMouseText   = 1 << 2,  // the mouse position, in plot coordinates, will not be displayed inside of the plot

@@ -16,4 +16,7 @@ public:
 
 	// アニメーションを持っているか
 	bool HasAnimation();
+
+	//アニメーションの数
+
 };

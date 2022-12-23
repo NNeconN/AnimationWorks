@@ -127,13 +127,11 @@
     <ClCompile Include="AnimationData.cpp" />
     <ClCompile Include="Application.cpp" />
     <ClCompile Include="assimpscene.cpp" />
+    <ClCompile Include="Bone.cpp" />
     <ClCompile Include="BoundingSphere.cpp" />
-    <ClCompile Include="bullet.cpp" />
     <ClCompile Include="CDirectXGraphics.cpp" />
     <ClCompile Include="CModel.cpp" />
     <ClCompile Include="collision.cpp" />
-    <ClCompile Include="enemy.cpp" />
-    <ClCompile Include="hommingmissile.cpp" />
     <ClCompile Include="imgui\imgui.cpp" />
     <ClCompile Include="imgui\ImGuizmo.cpp" />
     <ClCompile Include="imgui\imgui_demo.cpp" />
@@ -145,10 +143,10 @@
     <ClCompile Include="implot\implot.cpp" />
     <ClCompile Include="implot\implot_demo.cpp" />
     <ClCompile Include="implot\implot_items.cpp" />
+    <ClCompile Include="ModelFileData.cpp" />
     <ClCompile Include="ModelMgr.cpp" />
     <ClCompile Include="myimgui.cpp" />
     <ClCompile Include="myimplot.cpp" />
-    <ClCompile Include="nikoniko.cpp" />
     <ClCompile Include="Sphere.cpp" />
     <ClCompile Include="CWindow.cpp" />
     <ClCompile Include="CWindowCallback.cpp" />
@@ -161,10 +159,10 @@
     <ClCompile Include="ModelData.cpp" />
     <ClCompile Include="player.cpp" />
     <ClCompile Include="Shader.cpp" />
-    <ClCompile Include="skydome.cpp" />
     <ClCompile Include="stage.cpp" />
     <ClCompile Include="StageHit.cpp" />
     <ClCompile Include="tank.cpp" />
+    <ClCompile Include="TimelineData.cpp" />
     <ClCompile Include="updatespherecamera.cpp" />
     <ClCompile Include="utftosjisconv.cpp" />
     <ClCompile Include="WICTextureLoader.cpp" />
@@ -172,11 +170,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="AnimationData.h" />
+    <ClInclude Include="Bone.h" />
     <ClInclude Include="BoundingSphere.h" />
-    <ClInclude Include="bullet.h" />
     <ClInclude Include="collision.h" />
-    <ClInclude Include="enemy.h" />
-    <ClInclude Include="hommingmissile.h" />
     <ClInclude Include="imgui\imconfig.h" />
     <ClInclude Include="imgui\imgui.h" />
     <ClInclude Include="imgui\ImGuizmo.h" />
@@ -188,10 +184,10 @@
     <ClInclude Include="imgui\imstb_truetype.h" />
     <ClInclude Include="implot\implot.h" />
     <ClInclude Include="implot\implot_internal.h" />
+    <ClInclude Include="ModelFileData.h" />
     <ClInclude Include="ModelMgr.h" />
     <ClInclude Include="myimgui.h" />
     <ClInclude Include="myimplot.h" />
-    <ClInclude Include="nikoniko.h" />
     <ClInclude Include="Sphere.h" />
     <ClInclude Include="drawaxis.h" />
     <ClInclude Include="gameobject.h" />
@@ -216,10 +212,10 @@
     <ClInclude Include="player.h" />
     <ClInclude Include="Shader.h" />
     <ClInclude Include="shaderhashmap.h" />
-    <ClInclude Include="skydome.h" />
     <ClInclude Include="stage.h" />
     <ClInclude Include="StageHit.h" />
     <ClInclude Include="tank.h" />
+    <ClInclude Include="TimelineData.h" />
     <ClInclude Include="updatespherecamera.h" />
     <ClInclude Include="utftosjisconv.h" />
     <ClInclude Include="vertexproto.h" />

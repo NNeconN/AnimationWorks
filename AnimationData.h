@@ -9,20 +9,19 @@ class AnimationData
 public:
 	AnimationData(); //コンストラクタ
 
-	void AnimeData();
+	void Demo_DragPoints(); //線形保管されているグラフ
 
 	//線形補間
 	float lerp(float start, float end, float t) {
 		return start + t * (end - start);
 	}
 
-	void Demo_DragPoints();
-
 public:
 	std::vector<int> AnimetionKey{}; //アニメーションキー
 
 	Monster g_monster;
 private:
-	float yy;
-	float dd;
+	float sy; //leap()で計算後の数値を入れる変数 Y座標
+	float sx; //leap()で計算後の数値を入れる変数 X座標
+
 };

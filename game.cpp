@@ -19,11 +19,18 @@
 #include "myimplot.h"
 #include "player.h"	//相互インクルードを防ぐ為にcppにかく。ほんとはhに書くのがいい
 #include "AnimationData.h"
-#include "nikoniko.h"
+#include "TimelineData.h"
 
-Monster g_monster;
+enum GraphList //モーションフラフリスト
+{
+	animetion,
+	timeline
+};
+
+//AnimationData g_anime;
+Timeline g_timeline;
 AnimationData g_anime;
-Nikoniko g_nikoniko;
+Monster g_monster;
 
 template <typename T>
 inline T RandomRange(T min, T max) {
@@ -466,37 +473,87 @@ void GameUpdate(uint64_t dt) {
 //	ImGui::EndChild();
 //}
 
+//ファイル選択
+void FileSelection()
+{
+	if (ImGui::Button("Model File"))
+		ImGui::OpenPopup("Model File");
+	if (ImGui::BeginPopupModal("Model File", NULL, ImGuiWindowFlags_MenuBar))
+	{
+		if (ImGui::BeginMenuBar())
+		{
+			if (ImGui::BeginMenu("File"))
+			{
+				if (ImGui::MenuItem("Some menu item")) {}
+				ImGui::EndMenu();
+			}
+			ImGui::EndMenuBar();
+		}
+		ImGui::Text("Hello from Stacked The First\nUsing style.Colors[ImGuiCol_ModalWindowDimBg] behind it.");
+
+		// Testing behavior of widgets stacking their own regular popups over the modal.
+		static int item = 1;
+		static float color[4] = { 0.4f, 0.7f, 0.0f, 0.5f };
+		ImGui::Combo("Combo", &item, "aaaa\0bbbb\0cccc\0dddd\0eeee\0\0");
+		ImGui::ColorEdit4("color", color);
+
+		if (ImGui::Button("Add another modal.."))
+			ImGui::OpenPopup("Stacked 2");
+
+		// Also demonstrate passing a bool* to BeginPopupModal(), this will create a regular close button which
+		// will close the popup. Note that the visibility state of popups is owned by imgui, so the input value
+		// of the bool actually doesn't matter here.
+		bool unused_open = true;
+		if (ImGui::BeginPopupModal("Stacked 2", &unused_open))
+		{
+			ImGui::Text("Hello from Stacked The Second!");
+			if (ImGui::Button("Close"))
+				ImGui::CloseCurrentPopup();
+			ImGui::EndPopup();
+		}
+
+		if (ImGui::Button("Close"))
+			ImGui::CloseCurrentPopup();
+		ImGui::EndPopup();
+	}
+}
+
 // IMGUIウインドウ
 void imguidebug() {
 	//Demo_DragPoints();
-	g_anime.Demo_DragPoints();
-	ImGui::Begin(u8"自機");
+	static int listNo;
 
-	std::string str;
-	str = "position" + std::to_string(0) + ":" + 
-		std::to_string(g_monster.GetMtx()._41) + " " +
-		std::to_string(g_monster.GetMtx()._42) + " " +
-		std::to_string(g_monster.GetMtx()._43);
-		ImGui::Text(str.c_str());
+	if (ImGui::Button(u8"アニメーション"))
+	{
+		listNo = animetion;
+	}
 
-	ImGui::End();
+	if (ImGui::Button(u8"タイムライン"))
+	{
+		listNo = timeline;
+	}
 
-	ImGui::Begin(u8"操作説明");
-	ImGui::DragFloat("HP",&g_monster.hp);
-	str = u8"自機：ADキー：向きを変える";
-	ImGui::Text(str.c_str());
+	if (listNo == animetion)
+	{
+		g_anime.Demo_DragPoints();
+	}
 
-	str = u8"砲身：上矢印：上";
-	ImGui::Text(str.c_str());
-	str = u8"砲身：下矢印：下";
-	ImGui::Text(str.c_str());
-	
-	str = u8"砲台：左矢印：左回転";
-	ImGui::Text(str.c_str());
-	str = u8"砲台：右矢印：右回転";
-	ImGui::Text(str.c_str());
+	if (listNo == timeline)
+	{
+		g_timeline.Demo_TimelineGraph();
+	}
 
-	ImGui::End();
+	//ImGui::Begin(u8"自機");
+
+	//std::string str;
+	//str = "position" + std::to_string(0) + ":" +
+	//	std::to_string(g_monster.GetMtx()._41) + " " +
+	//	std::to_string(g_monster.GetMtx()._42) + " " +
+	//	std::to_string(g_monster.GetMtx()._43);
+	//ImGui::Text(str.c_str());
+
+	//ImGui::End();
+
 
 	//座標のDragGui
 	ImGui::Begin(u8"座標");
@@ -512,6 +569,8 @@ void imguidebug() {
 	//}
 	ImGui::Text("fps: %.2f", &g_monster.hp);
 	ImGui::SliderFloat("slider 1", &slider1, -100, 100);
+
+	FileSelection();
 
 	DirectX::XMFLOAT3 outputpos = { 0,0,0 };
 
@@ -553,6 +612,7 @@ void GameRender(uint64_t dt) {
 
 	// 戦車描画
 	/*g_tank.Draw();*/
+
 	g_monster.Draw();
 	/*g_nikoniko.Draw();*/
 

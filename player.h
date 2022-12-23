@@ -58,7 +58,6 @@ public:
 
 	void SetPos(DirectX::XMFLOAT3 input)
 	{
-
 		m_pos = input;
 	}
 
@@ -82,4 +81,5 @@ private:
 
 public:
 	float hp = 100;
+	MONSTERPARTS *g_MfileData;
 };

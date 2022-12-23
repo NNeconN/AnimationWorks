@@ -218,8 +218,8 @@ void Monster::UpdateLocalpose()
 {
 
 	// 各パーツの回転角度(前フレームからの変位量)
-	XMFLOAT3			partsangle[static_cast<int>(MONSTERPARTS::PARTSMAX)];
-	XMFLOAT3			partstrans[static_cast<int>(MONSTERPARTS::PARTSMAX)];
+	XMFLOAT3 partsangle[static_cast<int>(MONSTERPARTS::PARTSMAX)];
+	XMFLOAT3 partstrans[static_cast<int>(MONSTERPARTS::PARTSMAX)];
 
 	// どのパーツを動かすか
 	int idx = 0;

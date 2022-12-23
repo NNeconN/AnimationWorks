@@ -40,9 +40,6 @@
     <Filter Include="ソース ファイル\system\util">
       <UniqueIdentifier>{8282c3bb-4f20-462d-b5e7-cec5d26970cd}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\game\gemaobject\skydome">
-      <UniqueIdentifier>{f2e5ab4e-d55d-46f3-bfeb-44472cef72ac}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ソース ファイル\system\shader">
       <UniqueIdentifier>{1b760b6c-c7f3-428a-9c62-cbfb7e18acc3}</UniqueIdentifier>
     </Filter>
@@ -52,20 +49,11 @@
     <Filter Include="ソース ファイル\system\imgui\util">
       <UniqueIdentifier>{961306a1-50a1-4197-8780-c68ce42c7ca8}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\game\gemaobject\enemy">
-      <UniqueIdentifier>{c0408093-a367-4873-a6a8-2b2f95953b34}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\game\gemaobject\bullet">
-      <UniqueIdentifier>{07824859-babc-4a26-aea7-b26746813111}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ソース ファイル\game\manager">
       <UniqueIdentifier>{6c23cb31-b100-4e65-96b8-957ed164b45a}</UniqueIdentifier>
     </Filter>
     <Filter Include="ソース ファイル\game\manager\modelmgr">
       <UniqueIdentifier>{54727503-6746-4cee-b5e2-ac351f9cf94b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\game\gemaobject\homingmissile">
-      <UniqueIdentifier>{a0fefc95-79d4-40f7-a3d6-ef94effc7653}</UniqueIdentifier>
     </Filter>
     <Filter Include="ソース ファイル\game\gemaobject\stage">
       <UniqueIdentifier>{73cb2262-188e-43ae-998a-9e688e93dab7}</UniqueIdentifier>
@@ -76,8 +64,20 @@
     <Filter Include="ソース ファイル\system\implot">
       <UniqueIdentifier>{7aa76194-20aa-4ab5-a51e-5a6db7b719cd}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\game\gemaobject\niko">
-      <UniqueIdentifier>{7f0bac9e-0187-487f-945b-522f7981634c}</UniqueIdentifier>
+    <Filter Include="ソース ファイル\game\animetion">
+      <UniqueIdentifier>{4cb0025b-665d-420f-91bf-d7dfa97273ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\game\animetion\Animetor">
+      <UniqueIdentifier>{1e81f55e-ab44-489e-8990-0458f7bf90be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\game\animetion\Bone">
+      <UniqueIdentifier>{701030af-c5d8-4932-ac2d-f98c9c689380}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\game\animetion\timeline">
+      <UniqueIdentifier>{f32e06de-9aaf-4399-985a-cfb1509cbfe7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\game\manager\modelFileData">
+      <UniqueIdentifier>{541e8917-9d51-4976-a7a6-97c27e2e794a}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -129,9 +129,6 @@
     <ClCompile Include="CWindow.cpp">
       <Filter>ソース ファイル\system\windows</Filter>
     </ClCompile>
-    <ClCompile Include="skydome.cpp">
-      <Filter>ソース ファイル\game\gemaobject\skydome</Filter>
-    </ClCompile>
     <ClCompile Include="assimpscene.cpp">
       <Filter>ソース ファイル\system\model</Filter>
     </ClCompile>
@@ -171,17 +168,8 @@
     <ClCompile Include="myimgui.cpp">
       <Filter>ソース ファイル\system\imgui\util</Filter>
     </ClCompile>
-    <ClCompile Include="enemy.cpp">
-      <Filter>ソース ファイル\game\gemaobject\enemy</Filter>
-    </ClCompile>
-    <ClCompile Include="bullet.cpp">
-      <Filter>ソース ファイル\game\gemaobject\bullet</Filter>
-    </ClCompile>
     <ClCompile Include="ModelMgr.cpp">
       <Filter>ソース ファイル\game\manager\modelmgr</Filter>
-    </ClCompile>
-    <ClCompile Include="hommingmissile.cpp">
-      <Filter>ソース ファイル\game\gemaobject\homingmissile</Filter>
     </ClCompile>
     <ClCompile Include="stage.cpp">
       <Filter>ソース ファイル\game\gemaobject\stage</Filter>
@@ -210,11 +198,17 @@
     <ClCompile Include="imgui\ImGuizmo.cpp">
       <Filter>ソース ファイル\system\imgui</Filter>
     </ClCompile>
-    <ClCompile Include="AnimationData.cpp">
-      <Filter>ソース ファイル\game</Filter>
+    <ClCompile Include="TimelineData.cpp">
+      <Filter>ソース ファイル\game\animetion\timeline</Filter>
     </ClCompile>
-    <ClCompile Include="nikoniko.cpp">
-      <Filter>ソース ファイル\game\gemaobject\niko</Filter>
+    <ClCompile Include="AnimationData.cpp">
+      <Filter>ソース ファイル\game\animetion\Animetor</Filter>
+    </ClCompile>
+    <ClCompile Include="Bone.cpp">
+      <Filter>ソース ファイル\game\animetion\Bone</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelFileData.cpp">
+      <Filter>ソース ファイル\game\manager\modelFileData</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -287,9 +281,6 @@
     <ClInclude Include="Application.h">
       <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
-    <ClInclude Include="skydome.h">
-      <Filter>ソース ファイル\game\gemaobject\skydome</Filter>
-    </ClInclude>
     <ClInclude Include="drawaxis.h">
       <Filter>ソース ファイル\system\util</Filter>
     </ClInclude>
@@ -332,17 +323,8 @@
     <ClInclude Include="myimgui.h">
       <Filter>ソース ファイル\system\imgui\util</Filter>
     </ClInclude>
-    <ClInclude Include="enemy.h">
-      <Filter>ソース ファイル\game\gemaobject\enemy</Filter>
-    </ClInclude>
-    <ClInclude Include="bullet.h">
-      <Filter>ソース ファイル\game\gemaobject\bullet</Filter>
-    </ClInclude>
     <ClInclude Include="ModelMgr.h">
       <Filter>ソース ファイル\game\manager\modelmgr</Filter>
-    </ClInclude>
-    <ClInclude Include="hommingmissile.h">
-      <Filter>ソース ファイル\game\gemaobject\homingmissile</Filter>
     </ClInclude>
     <ClInclude Include="stage.h">
       <Filter>ソース ファイル\game\gemaobject\stage</Filter>
@@ -368,11 +350,17 @@
     <ClInclude Include="imgui\ImGuizmo.h">
       <Filter>ソース ファイル\system\imgui</Filter>
     </ClInclude>
-    <ClInclude Include="AnimationData.h">
-      <Filter>ソース ファイル\game</Filter>
+    <ClInclude Include="TimelineData.h">
+      <Filter>ソース ファイル\game\animetion\timeline</Filter>
     </ClInclude>
-    <ClInclude Include="nikoniko.h">
-      <Filter>ソース ファイル\game\gemaobject\niko</Filter>
+    <ClInclude Include="AnimationData.h">
+      <Filter>ソース ファイル\game\animetion\Animetor</Filter>
+    </ClInclude>
+    <ClInclude Include="Bone.h">
+      <Filter>ソース ファイル\game\animetion\Bone</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelFileData.h">
+      <Filter>ソース ファイル\game\manager\modelFileData</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
