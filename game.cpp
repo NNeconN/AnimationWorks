@@ -30,7 +30,7 @@ enum GraphList //モーションフラフリスト
 //AnimationData g_anime;
 Timeline g_timeline;
 AnimationData g_anime;
-Monster g_monster;a
+Monster g_monster;
 
 template <typename T>
 inline T RandomRange(T min, T max) {
