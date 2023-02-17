@@ -163,7 +163,6 @@
     <ClCompile Include="stage.cpp" />
     <ClCompile Include="StageHit.cpp" />
     <ClCompile Include="tank.cpp" />
-    <ClCompile Include="test.cpp" />
     <ClCompile Include="updatespherecamera.cpp" />
     <ClCompile Include="utftosjisconv.cpp" />
     <ClCompile Include="WICTextureLoader.cpp" />
